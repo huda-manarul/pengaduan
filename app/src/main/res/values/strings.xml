@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Masukkan</string>
+    <string name="title_activity_scrolling"></string>
+    <string name="Sejarah">
+        "
+        <h1 style="text-align:justify">Sejarah</h1>
+
+<hr />
+<p style="text-align:justify">Pada mulanya Dinas Perikanan terbagi menjadi 2 (dua) yaitu Perikanan Darat dan Perikanan Laut. Perikanan Darat pada tahun 1950 disebut juga Banner Is Ray yang berkantor di Jalan Kepodang. Pada tahun 1951 sampai dengan tahun 1960. Perikanan Darat dipimpin oleh R. Moerdoko pindah kantor di Jalan Empu Tantular No. 2 Semarang. Tahun 1961 sampai dengan tahun 1971 dipimpin oleh R.M Samiroen.</p>
+
+<p style="text-align:justify">awatan Perikanan Laut pada tahun 1950 bertempat di Jalan Imam Bonjol 134 Semarang. Pada tahun 1951 sampai dengan tahun 1960 Perikanan Laut dipimpin oleh R.W.M Soebroto. Pada Tahun 1960 samapi tahun 1970 Jawatan Perikanan Laut dipimpin oleh Soekarjo Karto Wirejo. Soekarjo Karto Wirejo digantikan oleh Soeyadi Siswohardjoyo dari tahun 1970 sampai dengan tahun 1971.</p>
+
+<p style="text-align:justify">Pada tahun 1972 Perikanan Darat dan Jawatan Perikanan Laut digabung dengan nama Dinas Perikanan Provinsi Jawa Tengah yang dipimpin oleh Soeyadi Siswohardjoyo bertempat di Jalan Imam Bonjol No. 134 Semarang. Masa kepemimpinan Djoko Setyajit, tepatnya pada tahun 2001 Dinas Perikanan Provinsi Jawa Tengah mengalami perubahan nama menjadi Dinas Perikanan dan Kelautan Provinsi Jawa Tengah, berdasarkan Peraturan Daerah Nomor 7 Tahun 2001.</p>
+
+<p style="text-align:justify">Sejalan dengan berputarnya waktu berdasarkan Peraturan pemerintah Nomor 6 Tahun 2008 Dinas Perikanan dan Kelautan Provinsi Jawa Tengah mengalami perubahan nama tepatnya pada saat kepemimpinan Ir. Galih Rasiono, M.Pi. Awalnya bernama Dinas Perikanan dan Kelautan Provinsi Jawa Tengah berubah menjadi Dinas Kelautan dan Perikanan Provinsi Jawa Tengah berkedudukan di Jalan Imam Bonjol No. 134 Kelurahan Sekayu Kecamatan Semarang Tengah Kota Semarang.Dinas Kelautan Dan Perikanan Provinsi Jawa Tengah dipimpin oleh Bapak Ir. Lalu M Syafriadi, M.M sejak 2 Agustus 2013 sampai sekarang.</p>
+
+<h1 style="text-align:justify">Visi dan Misi</h1>
+
+<hr />
+<h2 style="text-align:justify">Visi</h2>
+
+<p style="text-align:justify">Visi pembangunan kelautan dan perikanan adalah Mewujudkan sektor kelautan dan perikanan Indonesia yang mandiri, maju, kuat dan berbasis kepentingan nasional.</p>
+
+<h2 style="text-align:justify">Misi</h2>
+
+<p style="text-align:justify">Untuk mewujudkan visi pembangunan kelautan dan perikanan tersebut, maka misi yang diemban adalah :</p>
+
+<ol>
+	<li style="text-align: justify;"><strong>Kedaulatan <em>(Sovereignty)</em></strong>, yakni mewujudkan pembangunan kelautan dan perikanan yang berdaulat, guna menopang kemandirian ekonomi dengan mengamankan sumberdaya kelautan dan perikanan, dan mencerminkan kepribadian Indonesia sebagai negara kepulauan .</li>
+	<li style="text-align: justify;"><strong>Keberlanjutan <em>(Sustainability)</em></strong>, yakni mewujudkan pengelolaan sumberdaya kelautan dan perikanan yang berkelanjutan.</li>
+	<li style="text-align: justify;"><strong>Kesejahteraan <em>(Prosperity)</em></strong>, yakni mewujudkan masyarakat kelautan dan perikanan yang sejahtera, maju, mandiri, serta berkepribadian dalam kebudayaan.</li>
+</ol>
+
+        "
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
