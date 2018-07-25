@@ -17,11 +17,12 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import mana.huda.masukkan.R;
-import mana.huda.masukkan.adapter.PengaduanAdapter;
+import mana.huda.masukkan.adapter.JajalAdapter;
 import mana.huda.masukkan.model.ResponsePengaduan;
 import mana.huda.masukkan.model.SemuaPengaduan;
 import mana.huda.masukkan.util.Constant;
@@ -32,7 +33,7 @@ import mana.huda.masukkan.util.api.UtilsApi;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Random;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import okhttp3.ResponseBody;
@@ -51,8 +52,7 @@ public class ViewActivity extends AppCompatActivity {
 
     ProgressDialog loading;
     Context mContext;
-    List<SemuaPengaduan> semuaMasukanItemList = new ArrayList<>();
-    PengaduanAdapter matkulAdapter;
+    List<SemuaPengaduan> semuaPengaduanList;
     BaseApiService mApiService;
     SharedPrefManager sharedPrefManager;
 
@@ -64,7 +64,8 @@ public class ViewActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         mApiService = UtilsApi.getAPIService();
         mContext = this;
-
+        rvPengaduan = (RecyclerView) findViewById(R.id.rvPengaduan);
+        rvPengaduan.setLayoutManager(new LinearLayoutManager(this));
         sharedPrefManager = new SharedPrefManager(this);
         tvEmail.setText(sharedPrefManager.getSPEmail());
 
@@ -76,10 +77,6 @@ public class ViewActivity extends AppCompatActivity {
             }
         });
 
-        matkulAdapter = new PengaduanAdapter(this, semuaMasukanItemList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
-        rvPengaduan.setLayoutManager(mLayoutManager);
-        rvPengaduan.setItemAnimator(new DefaultItemAnimator());
 
         getDataPengaduan();
 
@@ -97,13 +94,19 @@ public class ViewActivity extends AppCompatActivity {
                                 JSONObject jsonRESULTS = new JSONObject(response.body().string());
                                 if (jsonRESULTS.getString("error").equals("false")){
                                     //jika sukses
-//                                    Toast.makeText(mContext, "Berhasil Mengambil Data", Toast.LENGTH_SHORT).show();
-                                    Toast.makeText(mContext, jsonRESULTS.getString("result"), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(mContext, "Berhasil Mengambil Data", Toast.LENGTH_SHORT).show();
+//                                    Toast.makeText(mContext, jsonRESULTS.getString("result"), Toast.LENGTH_SHORT).show();
+                                    JSONArray jsonArray = new JSONArray(jsonRESULTS.getString("result"));
+                                    JajalAdapter adapter = new JajalAdapter(jsonArray,ViewActivity.this);
+
+                                    rvPengaduan.setAdapter(adapter);
+
 
                                 } else {
                                     // Jika gagal
-                                    String error_message = jsonRESULTS.getString("error_msg");
-                                    Toast.makeText(mContext, error_message, Toast.LENGTH_SHORT).show();
+//                                    String error_message = jsonRESULTS.getString("error_msg");
+//                                    Toast.makeText(mContext, error_message, Toast.LENGTH_SHORT).show();
+
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();

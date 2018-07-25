@@ -24,7 +24,8 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.InsertActivity" />
-        <activity android:name=".activity.ViewActivity"></activity>
+        <activity android:name=".activity.ViewActivity" />
+        <activity android:name=".activity.DetailActivity"></activity>
     </application>
 
 </manifest>

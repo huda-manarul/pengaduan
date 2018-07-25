@@ -8,7 +8,7 @@ package mana.huda.masukkan.util.api;
 public class UtilsApi {
 
     // 10.0.2.2 ini adalah localhost.
-    public static final String BASE_URL_API = "http://192.168.43.234/webretrofit/";
+    public static final String BASE_URL_API = "http://blankedata.000webhostapp.com/api/";
 
     // Mendeklarasikan Interface BaseApiService
     public static BaseApiService getAPIService(){
